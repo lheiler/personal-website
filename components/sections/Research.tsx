@@ -14,7 +14,7 @@ export function Research() {
                     className="mb-16 flex flex-col md:flex-row md:items-end justify-between border-b border-neutral-200 pb-4"
                 >
                     <div className="flex flex-col">
-                        <span className="font-mono text-xs uppercase tracking-widest text-neutral-400">01 / Research</span>
+                        <span className="font-mono text-xs uppercase tracking-widest text-neutral-400">01 / Comp Neuro</span>
                         <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-neutral-900 mt-2">
                             Academic Work
                         </h2>

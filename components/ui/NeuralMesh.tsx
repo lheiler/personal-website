@@ -143,7 +143,7 @@ export const NeuralMesh = () => {
                         ctx.beginPath();
                         ctx.moveTo(node.x, node.y);
                         ctx.lineTo(nodeB.x, nodeB.y);
-                        ctx.strokeStyle = `rgba(0, 0, 0, ${opacity * 0.15})`;
+                        ctx.strokeStyle = `rgba(0, 0, 0, ${opacity * 0.25})`;
                         ctx.lineWidth = 0.5;
                         ctx.stroke();
                     }
