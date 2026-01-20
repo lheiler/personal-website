@@ -55,7 +55,7 @@ export function CreativeLab() {
         >
             <div className="sticky top-0 flex h-screen items-center overflow-hidden">
                 {/* Background "MUSIC" text - integrated as industrial backdrop */}
-                <div className="absolute inset-0 flex items-center justify-center z-0 opacity-15 pointer-events-none select-none overflow-hidden text-neutral-700">
+                <div className="absolute inset-0 flex items-center justify-center z-0 opacity-30 pointer-events-none select-none overflow-hidden text-neutral-500">
                     <h2 className="text-[32vw] font-black tracking-tighter leading-none whitespace-nowrap">
                         MUSIC
                     </h2>

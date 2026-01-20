@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@types/node": "^25.0.9",
-    "@types/react": "19.2.8",
+    "@types/react": "^18.0.0",
     "@types/three": "^0.182.0",
     "autoprefixer": "^10.4.19",
     "eslint": "^8",
