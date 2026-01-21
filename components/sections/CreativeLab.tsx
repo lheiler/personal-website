@@ -27,7 +27,7 @@ const projects = [
         id: 3,
         title: "SILVV3RR",
         category: "Music Production",
-        description: "\"SENSE<\" // \n FINDING MY OWN SOUND.",
+        description: "SENSE< // \nFINDING MY OWN SOUND.",
         year: "2024",
         image: "/silvv3rr.jpg",
         link: "https://soundcloud.com/silvv3rr"
