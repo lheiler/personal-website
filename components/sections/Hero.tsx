@@ -53,7 +53,7 @@ export function Hero() {
                     </div>
                     <div>
                         <span className="block text-neutral-900 mb-1">Location</span>
-                        London, UK / Global
+                        London, UK
                     </div>
                 </div>
             </motion.div>

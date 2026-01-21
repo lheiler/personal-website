@@ -35,12 +35,6 @@ const contactMethods = [
         href: "https://github.com/lheiler",
         icon: <Github className="w-6 h-6" />,
     },
-    {
-        name: "Soundcloud",
-        value: "lheiler",
-        href: "https://soundcloud.com/lheiler",
-        icon: <SoundcloudIcon className="w-6 h-6" />,
-    },
 ];
 
 export default function Contact() {
@@ -65,11 +59,8 @@ export default function Contact() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
                     <div className="font-light text-xl text-neutral-600 leading-relaxed">
-                        <p className="mb-8">
-                            Currently open for collaborations in <strong className="font-semibold text-neutral-900">computational neuroscience</strong>, <strong className="font-semibold text-neutral-900">scalable systems</strong>, and <strong className="font-semibold text-neutral-900">creative direction</strong>.
-                        </p>
                         <p>
-                            Based in London, UK.
+                            Always curious, always open. Reach out for collaborations, inquiries, or just to exchange ideas.
                         </p>
                     </div>
 

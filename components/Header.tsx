@@ -6,8 +6,8 @@ import { cn } from "@/lib/utils";
 
 const items = [
     { name: "Home", href: "/" },
-    { name: "Comp Neuro", href: "/#research" },
-    { name: "Machine Learning / AI", href: "/#engineering" },
+    { name: "Research", href: "/#research" },
+    { name: "Experience", href: "/#experience" },
     { name: "Music", href: "/#music" },
 ];
 
@@ -17,14 +17,22 @@ export function Header() {
     const [activeSection, setActiveSection] = React.useState("");
 
     React.useEffect(() => {
+        const darkIntersectingSections = new Set<Element>();
+
         // Theme Observer
         const themeObserver = new IntersectionObserver(
             (entries) => {
-                const isOverDark = entries.some(entry => entry.isIntersecting);
-                setIsDark(isOverDark);
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        darkIntersectingSections.add(entry.target);
+                    } else {
+                        darkIntersectingSections.delete(entry.target);
+                    }
+                });
+                setIsDark(darkIntersectingSections.size > 0);
             },
             {
-                rootMargin: "0px 0px -95% 0px",
+                rootMargin: "0px 0px -98% 0px", // Extremely tight margin at the very top
                 threshold: 0
             }
         );
@@ -39,11 +47,12 @@ export function Header() {
                 });
             },
             {
-                rootMargin: "-20% 0px -70% 0px", // Trigger when section is in the middle of viewport
+                rootMargin: "-20% 0px -70% 0px",
                 threshold: 0
             }
         );
 
+        // Initial collection and observing
         const darkSections = document.querySelectorAll('[data-header-theme="dark"]');
         darkSections.forEach(section => themeObserver.observe(section));
 
@@ -51,8 +60,8 @@ export function Header() {
         scrollSections.forEach(section => spyObserver.observe(section));
 
         return () => {
-            darkSections.forEach(section => themeObserver.unobserve(section));
-            scrollSections.forEach(section => spyObserver.unobserve(section));
+            themeObserver.disconnect();
+            spyObserver.disconnect();
         };
     }, []);
 

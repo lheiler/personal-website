@@ -13,9 +13,9 @@ export default function Home() {
       <Header />
       <Hero />
       <ThesisSpotlight />
-      <Marquee text="LORENZ HEILER — COMP NEURO — MACHINE LEARNING — MUSIC " />
+      <Marquee text="LORENZ HEILER — COMP NEURO — MACHINE LEARNING — MUSIC " data-header-theme="dark" />
       <Research />
-      <Marquee text="LONDON — ZURICH — STUTTGART — HONG KONG " />
+      <Marquee text="LONDON — ZURICH — STUTTGART — HONG KONG " data-header-theme="dark" />
       <Engineering />
       <CreativeLab />
       <ContactManifesto />

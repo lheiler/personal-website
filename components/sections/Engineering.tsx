@@ -85,7 +85,7 @@ export function Engineering() {
                     <BentoGrid className="max-w-7xl mx-auto">
                         <BentoGridItem
                             title="Exchange Semester at HKUST"
-                            description="Game Design, Quantum Computing"
+                            description="Game Design. Quantum Computing. Principles of Cybersecurity."
                             header={
                                 <a
                                     href="https://hkust.edu.hk/"
@@ -124,7 +124,7 @@ export function Engineering() {
                         />
                         <BentoGridItem
                             title="IT specialist at hmb Partners AG"
-                            description="data solutions, etc"
+                            description="Data management/backup. Compatibility checks for new software. SharePoint Administration."
                             header={
                                 <a
                                     href="https://www.hmb-partners.ch"
@@ -144,7 +144,7 @@ export function Engineering() {
                         />
                         <BentoGridItem
                             title="NLP Internship at Katie"
-                            description="Pipeline optimization & chunking algorithms for large-scale enterprise data."
+                            description="Research on chunking algorithms. Development of a full data-pipeline for model performance including data collection, data preprocessing and evaluation."
                             header={
                                 <a
                                     href="https://katie.qa/home"
@@ -214,7 +214,7 @@ export function Engineering() {
                             <div>
                                 <h4 className="text-[11px] font-mono font-bold text-neutral-500 uppercase tracking-[0.3em] mb-6 border-b border-white/5 pb-2">+ Fluent +</h4>
                                 <div className="space-y-4">
-                                    {["Java", "C", "C++", "Python", "OCaml"].map((lang) => (
+                                    {["Java", "C++", "Python"].map((lang) => (
                                         <div key={lang} className="flex items-center justify-between group/lang cursor-default">
                                             <span className="text-white font-bold tracking-tight group-hover/lang:text-blue-400 transition-colors uppercase">
                                                 <span className="text-blue-500 mr-2 opacity-50 group-hover:opacity-100 transition-opacity">&gt;</span>
@@ -230,22 +230,30 @@ export function Engineering() {
                                 </div>
                             </div>
 
-                            {/* Proficient / Specialized */}
+                            {/* Proficient */}
                             <div>
                                 <h4 className="text-[11px] font-mono font-bold text-neutral-500 uppercase tracking-[0.3em] mb-6 border-b border-white/5 pb-2">+ Specialized +</h4>
                                 <div className="space-y-4">
-                                    <div className="flex items-center justify-between group/lang cursor-default">
-                                        <span className="text-white font-bold tracking-tight group-hover/lang:text-blue-400 transition-colors uppercase">
-                                            <span className="text-blue-500 mr-2 opacity-50 group-hover:opacity-100 transition-opacity">&gt;</span>
-                                            Swift
-                                        </span>
-                                        <div className="flex gap-1">
-                                            {[...Array(5)].map((_, i) => (
-                                                <div key={i} className={`h-1 w-3 ${i < 4 ? 'bg-blue-500' : 'bg-white/10'} rounded-full`} />
-                                            ))}
+                                    {[
+                                        { name: "C", rating: 4 },
+                                        { name: "OCaml", rating: 4 },
+                                        { name: "Swift", rating: 4 },
+                                        { name: "JavaScript", rating: 4 },
+                                    ].map((lang) => (
+                                        <div key={lang.name} className="flex flex-col group/lang cursor-default">
+                                            <div className="flex items-center justify-between">
+                                                <span className="text-white font-bold tracking-tight group-hover/lang:text-blue-400 transition-colors uppercase">
+                                                    <span className="text-blue-500 mr-2 opacity-50 group-hover:opacity-100 transition-opacity">&gt;</span>
+                                                    {lang.name}
+                                                </span>
+                                                <div className="flex gap-1">
+                                                    {[...Array(5)].map((_, i) => (
+                                                        <div key={i} className={`h-1 w-3 ${i < lang.rating ? 'bg-blue-500' : 'bg-white/10'} rounded-full`} />
+                                                    ))}
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <span className="text-[10px] font-mono text-neutral-500 uppercase mt-2 block">App Development Focus</span>
+                                    ))}
                                 </div>
                             </div>
 
@@ -253,7 +261,7 @@ export function Engineering() {
                             <div>
                                 <h4 className="text-[11px] font-mono font-bold text-neutral-500 uppercase tracking-[0.3em] mb-6 border-b border-white/5 pb-2">+ Toolset +</h4>
                                 <div className="flex flex-wrap gap-2">
-                                    {["Unreal Engine", "GitHub", "Ableton Live", "Microsoft Office"].map((tool) => (
+                                    {["Unreal Engine", "GitHub", "Ableton Live", "Microsoft Office", "Terminal", "Git"].map((tool) => (
                                         <div key={tool} className="px-3 py-1.5 bg-white/5 rounded border border-white/10 text-xs font-mono text-white/60 hover:text-white hover:border-white/30 transition-all cursor-default uppercase">
                                             {tool}
                                         </div>

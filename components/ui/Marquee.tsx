@@ -2,9 +2,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-export const Marquee = ({ text }: { text: string }) => {
+export const Marquee = ({ text, "data-header-theme": headerTheme }: { text: string; "data-header-theme"?: string }) => {
     return (
-        <div className="w-full overflow-hidden py-4 bg-neutral-900">
+        <div className="w-full overflow-hidden py-4 bg-neutral-900" data-header-theme={headerTheme}>
             <motion.div
                 className="flex whitespace-nowrap"
                 animate={{ x: [0, -1000] }}
