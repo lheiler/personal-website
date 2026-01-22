@@ -24,7 +24,7 @@ export function Hero() {
                             Lorenz<br />Heiler.
                         </h1>
                         <p className="text-xl md:text-3xl font-light text-neutral-600 leading-relaxed max-w-xl">
-                            Bridging <strong className="font-semibold text-neutral-900">mechanistic neuroscience</strong>, <strong className="font-semibold text-neutral-900">scalable systems</strong>, and exploring <span className="italic text-neutral-500">creative direction</span>.
+                            Bridging <strong className="font-semibold text-neutral-900">mechanistic neuroscience</strong>, <strong className="font-semibold text-neutral-900">machine learning</strong>, and exploring <span className="italic text-neutral-500">creative direction</span>.
                         </p>
                     </div>
 
