@@ -1,4 +1,4 @@
-# Lorenz Heiler - Personal Portfolio
+# Lorenz Heiler - Personal Portfolio 
 
 A personal portfolio website bridging Mechanistic Neuroscience, Scalable Systems, and Creative Direction.
 
