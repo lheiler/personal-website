@@ -26,7 +26,10 @@ export function Research() {
 
                 <div className="flex flex-col space-y-4">
                     {/* Master's Thesis */}
-                    <motion.div
+                    <motion.a
+                        href="https://github.com/lheiler/cbm-eeg-bench"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
@@ -46,7 +49,7 @@ export function Research() {
                         <div className="md:col-span-2 flex justify-end pt-2">
                             <ArrowUpRight className="w-5 h-5 text-neutral-300 group-hover:text-blue-600 group-hover:rotate-45 transition-all duration-300" />
                         </div>
-                    </motion.div>
+                    </motion.a>
 
                     {/* Bachelor's Thesis */}
                     <motion.div

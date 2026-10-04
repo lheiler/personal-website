@@ -58,7 +58,7 @@ export function ThesisSpotlight() {
                             </div>
 
                             <motion.a
-                                href="https://github.com/lheiler/msc_thesis"
+                                href="https://github.com/lheiler/cbm-eeg-bench"
                                 target="_blank"
                                 whileHover={{ x: 5 }}
                                 className="inline-flex items-center gap-4 text-xs font-mono font-bold tracking-widest uppercase text-neutral-900 mt-8 group"
@@ -184,7 +184,7 @@ export function ThesisSpotlight() {
                                 </div>
 
                                 <a
-                                    href="https://github.com/lheiler/msc_thesis"
+                                    href="https://github.com/lheiler/cbm-eeg-bench"
                                     target="_blank"
                                     className="inline-flex items-center gap-2 text-[10px] font-mono font-bold tracking-widest uppercase text-neutral-400 hover:text-blue-400 transition-colors"
                                 >
